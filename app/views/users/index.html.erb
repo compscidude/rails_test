@@ -2,11 +2,9 @@
 
 <div class="container"> 
     
-    <% @users.each do |user| %>
 
     <!-- we could wrap this in a _user.html.erb partial, but does not work with heroku? path problem? -->
     <%= render partial: 'shared/user', collection: @users %>
 
-    <% end %>
 
 </div>
