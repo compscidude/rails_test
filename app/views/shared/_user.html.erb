@@ -1,0 +1,12 @@
+
+<!-- We use partial to render each user div -->
+
+    <aside class="col-md-6">
+        <section class="user_info">
+            <h1>
+            <%= gravatar_for user %>
+             <%= link_to user.name, user %> <br>
+            <p> <small> <%= user.email %> </small> </p>
+            </h1>
+        </section>
+    </aside>

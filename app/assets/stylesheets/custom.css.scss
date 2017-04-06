@@ -1,0 +1,59 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@mixin box_sizing{
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+}
+
+.debug_dump{
+    clear:both;
+    float:left;
+    width: 100%;
+    margin-top: 45px;
+    @include box_sizing;
+}
+
+footer{
+    clear:both;   
+}
+
+aside{
+    section{
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    .gravatar{
+        float: left;
+        margin-right: 10px;
+    }
+
+    h1{
+        font-size: 1.4em;
+        letter-spacing: -1px;
+        margin-bottom: 3px;
+        margin-top: 0px;
+    }
+}
+
+input, textarea, select, uneditable-input {
+    border: 1px solid #bbb;
+    width: 100%;
+    margin-bottom: 15px;
+    @include box_sizing;
+}
+
+input{
+    height: auto !important;
+}
+
+.form{
+    border:1px solid black;
+    padding: 15px;
+}
