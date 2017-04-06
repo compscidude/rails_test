@@ -24,15 +24,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 group :development, :test do
-
-    gem 'spring',    
+    gem 'spring'
     gem 'sqlite3'   
-
 end 
 
 
 group :production do
-    gem 'pg',
+    gem 'pg'
     gem 'rails_12factor'
 end 
 
