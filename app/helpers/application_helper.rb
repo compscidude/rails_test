@@ -10,8 +10,6 @@ module ApplicationHelper
         end
     end
 
-
-
     ## grab avatar information of the user
     def gravatar_for(user)
         gravatar_id = Digest::MD5::hexdigest(user.email.downcase);

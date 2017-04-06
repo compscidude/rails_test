@@ -2,6 +2,19 @@
 
 <div class="container"> 
     
-    <%= render partial: 'shared/user', collection: @users %>
+    <% @users.each do |user| %>
+
+    <!-- we could wrap this in a _user.html.erb partial, but does not work with heroku? path problem? -->
+    <aside class="col-md-6">
+        <section class="user_info">
+            <h1>
+             <%= gravatar_for user %>
+             <%= link_to user.name, user %> <br>
+            <p> <small> <%= user.email %> </small> </p>
+            </h1>
+        </section>
+    </aside>
+
+    <% end %>
 
 </div>
