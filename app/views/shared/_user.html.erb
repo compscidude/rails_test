@@ -8,7 +8,12 @@
              <%= link_to user.name, user %> <br>
             <p> <small> <%= user.email %> </small> </p>
             </h1>
+
+             <!-- why don't we show this iff the current user is logged in -->
+       
              <%= link_to "Edit", edit_user_path(user), class: "btn btn-success" %>
              <%= link_to "Delete", user, method: :delete, data: { confirm: "you sure?"}, class: "btn btn-danger" %>
+
+
         </section>
     </aside>
