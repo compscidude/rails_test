@@ -17,6 +17,14 @@ module ApplicationHelper
         image_tag(gravatar_url, alt: user.name, class: "gravatar")
     end 
     
+    def adminornot?
+        if (current_user.admin?)
+            "ADMIN - #{current_user.name}"
+        else
+            "#{current_user.name}"
+        end
+    end
+    
 
     
 
